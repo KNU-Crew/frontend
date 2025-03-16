@@ -5,7 +5,7 @@ import { clubCategoryMapping, textColorsByCategory } from '../../shared/model/da
 export default function ClubTable({ club }: { club: Club }) {
   return (
     <Link
-      href={`/club/${club.id}`}
+      href={`/clubs/${club.id}`}
       className={`flex w-11/12 items-center justify-between rounded-lg border-[3px] px-6 pb-4 pt-6 duration-200 hover:scale-105 ${club.isRecruiting ? 'border-red-400 hover:border-red-500' : 'border-neutral-300 hover:border-neutral-400'} flex-col`}
     >
       <div className='mb-3 flex flex-col items-start justify-center gap-4 rounded-md p-2 text-lg font-bold'>
