@@ -11,9 +11,10 @@ export interface Club {
 
 export interface ClubDetailInfo {
   id: number;
+  category: string;
   description: string;
   establishedYear: string;
-  imageUrl: string;
+  imageUrl?: string;
   instagram?: string;
   youtube?: string;
   isRecruiting: boolean;
