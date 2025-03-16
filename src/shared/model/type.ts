@@ -8,3 +8,20 @@ export interface Club {
   category: string;
   isRecruiting: boolean;
 }
+
+export interface ClubDetailInfo {
+  id: number;
+  description: string;
+  establishedYear: string;
+  imageUrl: string;
+  instagram?: string;
+  youtube?: string;
+  isRecruiting: boolean;
+  location: string;
+  memberCount: number;
+  name: string;
+  subName: string;
+  presidentContact: string;
+  recruitmentId: string;
+  recruitmentInfo: string;
+}
