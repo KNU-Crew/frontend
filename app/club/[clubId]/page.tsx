@@ -13,17 +13,17 @@ import { useEffect, useState } from 'react';
 
 export default function ClubDetailPage() {
   const params = useParams();
-  const id = params.id;
+  const clubId = params.clubId;
 
   const [club, setClub] = useState<Club | null>(null);
   const [activeTab, setActiveTab] = useState<ActiveTabTypes>('동아리 소개');
 
   useEffect(() => {
-    if (id) {
-      const foundClub = clubList.find((club) => club.id === Number(id));
+    if (clubId) {
+      const foundClub = clubList.find((club) => club.id === Number(clubId));
       setClub(foundClub || null);
     }
-  }, [id]);
+  }, [clubId]);
 
   if (!club) return <ClubNotFound />;
 
